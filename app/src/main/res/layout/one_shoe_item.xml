@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoeItem"
+            type="com.othman.shoestore.pojo.ShoeItem" />
+    </data>
+
+
+    <!--    ConstraintLayout is used to avoid nested views and to maintain a flat hierarchy because the layout was complex -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/shimmer"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="8dp"
+            app:contentPadding="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/shoe_img"
+            app:layout_constraintEnd_toEndOf="@id/shoe_img"
+            app:layout_constraintStart_toStartOf="@id/shoe_img"
+            app:layout_constraintTop_toTopOf="@id/shoe_img">
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/shoe_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginVertical="8dp"
+            android:adjustViewBounds="true"
+            android:elevation="10dp"
+            android:maxWidth="250dp"
+            android:padding="16dp"
+            app:imageUrl="@{shoeItem.imageUrl}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/shoe_test" />
+
+        <TextView
+            android:id="@+id/shoe_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:shadowColor="@color/dark"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@{shoeItem.size.toString()}"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@id/shoe_img"
+            app:layout_constraintTop_toTopOf="@id/shoe_img"
+            tools:text="23" />
+
+        <TextView
+            android:id="@+id/shoe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@{shoeItem.title}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_help"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shoe_img"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{shoeItem.companyName}"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shoe_title"
+            tools:text="@tools:sample/full_names" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

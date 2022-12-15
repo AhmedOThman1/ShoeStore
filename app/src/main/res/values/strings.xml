@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+
+    <string name="image_url">Image Url</string>
+    <string name="shoe_title">Shoe title</string>
+    <string name="company_title">Company title</string>
+    <string name="shoe_size">Shoe size</string>
+    <string name="shoe_description">Shoe description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome">Welcome!</string>
+    <string name="join_us_amp_enjoy_a_fantastic_shoe_shopping_experience"><![CDATA[Join us & enjoy a fantastic shoe-shopping experience]]></string>
+    <string name="next">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_the_journey_with_us">Start the journey with US</string>
+    <string name="just_do_it_with_shoe_store">Just do it with Shoe Store!</string>
+    <string name="get_access_to_more_than_1000_shoes">Get access to more than 1000 shoes</string>
+    <string name="browse_shoes_from_nike_and_also_from_another_brands_with_20_off">Browse shoes from nike and also from another brands with 20% off</string>
+    <string name="smart_gorgeous_fashionable_collection"><![CDATA[Smart, gorgeous & fashionable collection]]></string>
+    <string name="awesome_branded_shoes">Awesome Branded Shoes</string>
+</resources>
